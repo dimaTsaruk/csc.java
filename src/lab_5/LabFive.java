@@ -8,5 +8,7 @@ public class LabFive {
         b1 = (byte) (b1 + 1);
 
         System.out.println(b1);
+
+        //some new code to lab 5
     }
 }
