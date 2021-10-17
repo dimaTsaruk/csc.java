@@ -1,0 +1,27 @@
+An array is a named list of data items that all have the same data type.
+Each data item is an element of the array.
+A subscript is an integer contained within square brackets that specifies one
+of an array’s elements.
+A subscript is also called an index. In particular, you will see the term index in some error messages issued by the compiler.
+arrays are passed by reference, meaning that a receiving method gets the memory address.
+It is a subtle distinction, but in Java, the receiving method gets a copy of the original address.
+In other words, in Java, an array is not passed by reference, but a reference to an array is passed by value.
+You pass an array to a method using its mane, a copy of the array's is passed to the method.
+In the method header, brackets are used to show that the parameter is an array of integers (a reference) and not a simple int.
+// public static void methodGetsArray(int[] arr)
+
+    *** Summary ***
+- lowest array subscript is 0
+- the highest array subscript is one less than the length of the array
+- a semicolon follows the closing curly brace in an array initialization list
+- length is an array property and not a method. Conversely, length() is a String method, and not a property.
+- Don’t place a subscript after an object’s field or method name when accessing an array of objects.
+Instead, the subscript for an object follows the object and comes before the dot and the field or method name.
+- Don’t assume that an array of characters is a string. Although an array of characters
+ can be treated like a string in languages like C++, you can’t do this in Java. For example,
+ if you display the name of a character array, you will see its address, not its contents.
+ - Don’t forget that array names are references. Therefore, you cannot assign one array to another using the 5 operator,
+  nor can you compare array contents using the 55 operator.
+ - Don’t use brackets with an array name when you pass it to a method.
+  Do use brackets in the method header that accepts the array.
+
