@@ -1,4 +1,4 @@
-package tutorials_java;
+package tutorials_java.chapter_8;
 
 import javax.swing.*;
 

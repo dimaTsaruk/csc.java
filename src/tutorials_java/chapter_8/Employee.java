@@ -1,4 +1,4 @@
-package tutorials_java;
+package tutorials_java.chapter_8;
 
 public class Employee {
     private int empNum;
