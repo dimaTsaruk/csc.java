@@ -1,9 +1,10 @@
 
 /************************************************************************
  * Name: Dmytro Tsaruk                                             CSC 156
- * Date: Nov 2                                                   Lab 9.9
+ * Date: Dec 1                                                     Lab 9.9
  *************************************************************************
  * Calculate statistics for a baseball team using an array of objects
+ * Using insertion sorting algorithm
  ************************************************************************/
 package lab_9;
 
@@ -175,23 +176,6 @@ public class Baseball999 {
         }
     }
 
-    // Insertion Sort Algorithm for sorting array of Players
-    /*public static void insertionSort(Player team[], int teamSize) {
-
-        int a = 1;
-        int b ;
-        Player temp;
-        while (a < team.length) {
-            temp = team[a];
-             b = a - 1;
-            while (b >= 0 && team[b].getNumber() > temp.getNumber()) {
-                team[b + 1] = team[b];
-                --b;
-            }
-            team[b + 1] = temp;
-            ++a;
-        }
-    }*/
 
     public static void insertionSort(Player array[], int size) {
         for (int j = 1; j < size; j++) {
